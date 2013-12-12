@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DMC XML feature.
+ */
+
+include_once 'dmc_xml.features.inc';
