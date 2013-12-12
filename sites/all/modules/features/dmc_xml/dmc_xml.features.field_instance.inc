@@ -145,8 +145,52 @@ function dmc_xml_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-dmc_record-field_segment'
-  $field_instances['node-dmc_record-field_segment'] = array(
+  // Exported field_instance: 'node-dmc_record-field_sequence0'
+  $field_instances['node-dmc_record-field_sequence0'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sequence0',
+    'label' => 'sequence',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_sequence1'
+  $field_instances['node-dmc_record-field_sequence1'] = array(
     'bundle' => 'dmc_record',
     'default_value' => NULL,
     'deleted' => 0,
@@ -154,31 +198,630 @@ function dmc_xml_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'field_collection',
+        'module' => 'number',
         'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
         ),
-        'type' => 'field_collection_view',
-        'weight' => 7,
+        'type' => 'number_integer',
+        'weight' => 11,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_segment',
-    'label' => 'segment',
+    'field_name' => 'field_sequence1',
+    'label' => 'sequence2',
     'required' => 0,
     'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'field_collection',
+      'module' => 'number',
       'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 8,
+      'type' => 'number',
+      'weight' => 25,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_sequence2'
+  $field_instances['node-dmc_record-field_sequence2'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 14,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sequence2',
+    'label' => 'sequence3',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_sequence3'
+  $field_instances['node-dmc_record-field_sequence3'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 17,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sequence3',
+    'label' => 'sequence4',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_sequence4'
+  $field_instances['node-dmc_record-field_sequence4'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 20,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sequence4',
+    'label' => 'sequence5',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_sequence5'
+  $field_instances['node-dmc_record-field_sequence5'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 23,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sequence5',
+    'label' => 'sequence6',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_in0'
+  $field_instances['node-dmc_record-field_tc_in0'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_in0',
+    'label' => 'tc_in',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_in1'
+  $field_instances['node-dmc_record-field_tc_in1'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 12,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_in1',
+    'label' => 'tc_in2',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 26,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_in2'
+  $field_instances['node-dmc_record-field_tc_in2'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 15,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_in2',
+    'label' => 'tc_in3',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_in3'
+  $field_instances['node-dmc_record-field_tc_in3'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 18,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_in3',
+    'label' => 'tc_in4',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_in4'
+  $field_instances['node-dmc_record-field_tc_in4'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 21,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_in4',
+    'label' => 'tc_in5',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_in5'
+  $field_instances['node-dmc_record-field_tc_in5'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 24,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_in5',
+    'label' => 'tc_in6',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_out0'
+  $field_instances['node-dmc_record-field_tc_out0'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_out0',
+    'label' => 'tc_out',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_out1'
+  $field_instances['node-dmc_record-field_tc_out1'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 13,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_out1',
+    'label' => 'tc_out2',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 27,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_out2'
+  $field_instances['node-dmc_record-field_tc_out2'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 16,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_out2',
+    'label' => 'tc_out3',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_out3'
+  $field_instances['node-dmc_record-field_tc_out3'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 19,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_out3',
+    'label' => 'tc_out4',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_out4'
+  $field_instances['node-dmc_record-field_tc_out4'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 22,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_out4',
+    'label' => 'tc_out5',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-dmc_record-field_tc_out5'
+  $field_instances['node-dmc_record-field_tc_out5'] = array(
+    'bundle' => 'dmc_record',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'hms_field',
+        'settings' => array(
+          'format' => 'h:mm:ss',
+          'leading_zero' => 1,
+        ),
+        'type' => 'hms_default_formatter',
+        'weight' => 25,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tc_out5',
+    'label' => 'tc_out6',
+    'required' => 0,
+    'settings' => array(
+      'default_description' => 1,
+      'format' => 's',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'hms_field',
+      'settings' => array(),
+      'type' => 'hms_default_widget',
+      'weight' => 14,
     ),
   );
 
@@ -256,7 +899,24 @@ function dmc_xml_field_default_field_instances() {
   t('Locale');
   t('aspect_ratio');
   t('duration');
-  t('segment');
+  t('sequence');
+  t('sequence2');
+  t('sequence3');
+  t('sequence4');
+  t('sequence5');
+  t('sequence6');
+  t('tc_in');
+  t('tc_in2');
+  t('tc_in3');
+  t('tc_in4');
+  t('tc_in5');
+  t('tc_in6');
+  t('tc_out');
+  t('tc_out2');
+  t('tc_out3');
+  t('tc_out4');
+  t('tc_out5');
+  t('tc_out6');
   t('upn');
   t('version');
 

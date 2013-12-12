@@ -77,6 +77,11 @@ function dmc_xml_feeds_importer_default() {
             'target' => 'field_aspect_ratio',
             'unique' => FALSE,
           ),
+          7 => array(
+            'source' => 'Duration',
+            'target' => 'field_tc_out0',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
         'input_format' => 'plain_text',

@@ -123,23 +123,292 @@ function dmc_xml_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_segment'
-  $field_bases['field_segment'] = array(
+  // Exported field_base: 'field_sequence0'
+  $field_bases['field_sequence0'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_segment',
+    'field_name' => 'field_sequence0',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
-    'module' => 'field_collection',
-    'settings' => array(
-      'hide_blank_items' => 1,
-      'path' => '',
-    ),
+    'module' => 'number',
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'field_collection',
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_sequence1'
+  $field_bases['field_sequence1'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sequence1',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_sequence2'
+  $field_bases['field_sequence2'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sequence2',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_sequence3'
+  $field_bases['field_sequence3'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sequence3',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_sequence4'
+  $field_bases['field_sequence4'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sequence4',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_sequence5'
+  $field_bases['field_sequence5'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sequence5',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_tc_in0'
+  $field_bases['field_tc_in0'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_in0',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_in1'
+  $field_bases['field_tc_in1'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_in1',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_in2'
+  $field_bases['field_tc_in2'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_in2',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_in3'
+  $field_bases['field_tc_in3'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_in3',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_in4'
+  $field_bases['field_tc_in4'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_in4',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_in5'
+  $field_bases['field_tc_in5'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_in5',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_out0'
+  $field_bases['field_tc_out0'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_out0',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_out1'
+  $field_bases['field_tc_out1'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_out1',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_out2'
+  $field_bases['field_tc_out2'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_out2',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_out3'
+  $field_bases['field_tc_out3'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_out3',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_out4'
+  $field_bases['field_tc_out4'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_out4',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
+  );
+
+  // Exported field_base: 'field_tc_out5'
+  $field_bases['field_tc_out5'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_tc_out5',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'hms_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'hms_field',
   );
 
   // Exported field_base: 'field_upn'

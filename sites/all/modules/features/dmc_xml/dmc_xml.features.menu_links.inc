@@ -10,17 +10,17 @@
 function dmc_xml_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_export-xml:export-xml
-  $menu_links['main-menu_export-xml:export-xml'] = array(
+  // Exported menu link: main-menu_export-xml:export-xml2
+  $menu_links['main-menu_export-xml:export-xml2'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'export-xml',
-    'router_path' => 'export-xml',
+    'link_path' => 'export-xml2',
+    'router_path' => 'export-xml2',
     'link_title' => 'Export XML',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_export-xml:export-xml',
+      'identifier' => 'main-menu_export-xml:export-xml2',
     ),
     'module' => 'menu',
     'hidden' => 0,

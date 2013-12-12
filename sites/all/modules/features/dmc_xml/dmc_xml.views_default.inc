@@ -11,11 +11,11 @@ function dmc_xml_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'export_xml';
+  $view->name = 'export_xml_v2';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Export XML';
+  $view->human_name = 'Export XML v2';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -34,13 +34,6 @@ function dmc_xml_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['view_mode'] = 'full';
   $handler->display->display_options['row_options']['links'] = FALSE;
-  /* Relationship: segment */
-  $handler->display->display_options['relationships']['field_segment_value']['id'] = 'field_segment_value';
-  $handler->display->display_options['relationships']['field_segment_value']['table'] = 'field_data_field_segment';
-  $handler->display->display_options['relationships']['field_segment_value']['field'] = 'field_segment_value';
-  $handler->display->display_options['relationships']['field_segment_value']['ui_name'] = 'segment';
-  $handler->display->display_options['relationships']['field_segment_value']['label'] = 'segment';
-  $handler->display->display_options['relationships']['field_segment_value']['delta'] = '-1';
   /* Field: Content: upn */
   $handler->display->display_options['fields']['field_upn']['id'] = 'field_upn';
   $handler->display->display_options['fields']['field_upn']['table'] = 'field_data_field_upn';
@@ -79,20 +72,180 @@ function dmc_xml_views_default_views() {
   $handler->display->display_options['fields']['field_aspect_ratio']['id'] = 'field_aspect_ratio';
   $handler->display->display_options['fields']['field_aspect_ratio']['table'] = 'field_data_field_aspect_ratio';
   $handler->display->display_options['fields']['field_aspect_ratio']['field'] = 'field_aspect_ratio';
-  /* Field: Content: segment */
-  $handler->display->display_options['fields']['field_segment']['id'] = 'field_segment';
-  $handler->display->display_options['fields']['field_segment']['table'] = 'field_data_field_segment';
-  $handler->display->display_options['fields']['field_segment']['field'] = 'field_segment';
-  $handler->display->display_options['fields']['field_segment']['alter']['text'] = '[field_segment-value]';
-  $handler->display->display_options['fields']['field_segment']['alter']['trim_whitespace'] = TRUE;
-  $handler->display->display_options['fields']['field_segment']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_segment']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_segment']['type'] = 'field_collection_fields';
-  $handler->display->display_options['fields']['field_segment']['settings'] = array(
-    'view_mode' => 'full',
+  /* Field: Content: sequence */
+  $handler->display->display_options['fields']['field_sequence0']['id'] = 'field_sequence0';
+  $handler->display->display_options['fields']['field_sequence0']['table'] = 'field_data_field_sequence0';
+  $handler->display->display_options['fields']['field_sequence0']['field'] = 'field_sequence0';
+  $handler->display->display_options['fields']['field_sequence0']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sequence0']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_sequence0']['type'] = 'number_unformatted';
+  $handler->display->display_options['fields']['field_sequence0']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
   );
-  $handler->display->display_options['fields']['field_segment']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_segment']['separator'] = ' ';
+  /* Field: Content: tc_in */
+  $handler->display->display_options['fields']['field_tc_in0']['id'] = 'field_tc_in0';
+  $handler->display->display_options['fields']['field_tc_in0']['table'] = 'field_data_field_tc_in0';
+  $handler->display->display_options['fields']['field_tc_in0']['field'] = 'field_tc_in0';
+  $handler->display->display_options['fields']['field_tc_in0']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: tc_out */
+  $handler->display->display_options['fields']['field_tc_out0']['id'] = 'field_tc_out0';
+  $handler->display->display_options['fields']['field_tc_out0']['table'] = 'field_data_field_tc_out0';
+  $handler->display->display_options['fields']['field_tc_out0']['field'] = 'field_tc_out0';
+  $handler->display->display_options['fields']['field_tc_out0']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: sequence2 */
+  $handler->display->display_options['fields']['field_sequence1']['id'] = 'field_sequence1';
+  $handler->display->display_options['fields']['field_sequence1']['table'] = 'field_data_field_sequence1';
+  $handler->display->display_options['fields']['field_sequence1']['field'] = 'field_sequence1';
+  $handler->display->display_options['fields']['field_sequence1']['label'] = 'sequence';
+  $handler->display->display_options['fields']['field_sequence1']['type'] = 'number_unformatted';
+  $handler->display->display_options['fields']['field_sequence1']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: tc_in2 */
+  $handler->display->display_options['fields']['field_tc_in1']['id'] = 'field_tc_in1';
+  $handler->display->display_options['fields']['field_tc_in1']['table'] = 'field_data_field_tc_in1';
+  $handler->display->display_options['fields']['field_tc_in1']['field'] = 'field_tc_in1';
+  $handler->display->display_options['fields']['field_tc_in1']['label'] = 'tc_in';
+  $handler->display->display_options['fields']['field_tc_in1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_tc_in1']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: tc_out2 */
+  $handler->display->display_options['fields']['field_tc_out1']['id'] = 'field_tc_out1';
+  $handler->display->display_options['fields']['field_tc_out1']['table'] = 'field_data_field_tc_out1';
+  $handler->display->display_options['fields']['field_tc_out1']['field'] = 'field_tc_out1';
+  $handler->display->display_options['fields']['field_tc_out1']['label'] = 'tc_out';
+  $handler->display->display_options['fields']['field_tc_out1']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: sequence3 */
+  $handler->display->display_options['fields']['field_sequence2']['id'] = 'field_sequence2';
+  $handler->display->display_options['fields']['field_sequence2']['table'] = 'field_data_field_sequence2';
+  $handler->display->display_options['fields']['field_sequence2']['field'] = 'field_sequence2';
+  $handler->display->display_options['fields']['field_sequence2']['label'] = 'sequence';
+  $handler->display->display_options['fields']['field_sequence2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sequence2']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_sequence2']['type'] = 'number_unformatted';
+  $handler->display->display_options['fields']['field_sequence2']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: tc_in3 */
+  $handler->display->display_options['fields']['field_tc_in2']['id'] = 'field_tc_in2';
+  $handler->display->display_options['fields']['field_tc_in2']['table'] = 'field_data_field_tc_in2';
+  $handler->display->display_options['fields']['field_tc_in2']['field'] = 'field_tc_in2';
+  $handler->display->display_options['fields']['field_tc_in2']['label'] = 'tc_in';
+  $handler->display->display_options['fields']['field_tc_in2']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: tc_out3 */
+  $handler->display->display_options['fields']['field_tc_out2']['id'] = 'field_tc_out2';
+  $handler->display->display_options['fields']['field_tc_out2']['table'] = 'field_data_field_tc_out2';
+  $handler->display->display_options['fields']['field_tc_out2']['field'] = 'field_tc_out2';
+  $handler->display->display_options['fields']['field_tc_out2']['label'] = 'tc_out';
+  $handler->display->display_options['fields']['field_tc_out2']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: sequence4 */
+  $handler->display->display_options['fields']['field_sequence3']['id'] = 'field_sequence3';
+  $handler->display->display_options['fields']['field_sequence3']['table'] = 'field_data_field_sequence3';
+  $handler->display->display_options['fields']['field_sequence3']['field'] = 'field_sequence3';
+  $handler->display->display_options['fields']['field_sequence3']['label'] = 'sequence';
+  $handler->display->display_options['fields']['field_sequence3']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_sequence3']['type'] = 'number_unformatted';
+  $handler->display->display_options['fields']['field_sequence3']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: tc_in4 */
+  $handler->display->display_options['fields']['field_tc_in3']['id'] = 'field_tc_in3';
+  $handler->display->display_options['fields']['field_tc_in3']['table'] = 'field_data_field_tc_in3';
+  $handler->display->display_options['fields']['field_tc_in3']['field'] = 'field_tc_in3';
+  $handler->display->display_options['fields']['field_tc_in3']['label'] = 'tc_in';
+  $handler->display->display_options['fields']['field_tc_in3']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: tc_out4 */
+  $handler->display->display_options['fields']['field_tc_out3']['id'] = 'field_tc_out3';
+  $handler->display->display_options['fields']['field_tc_out3']['table'] = 'field_data_field_tc_out3';
+  $handler->display->display_options['fields']['field_tc_out3']['field'] = 'field_tc_out3';
+  $handler->display->display_options['fields']['field_tc_out3']['label'] = 'tc_out';
+  $handler->display->display_options['fields']['field_tc_out3']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: sequence5 */
+  $handler->display->display_options['fields']['field_sequence4']['id'] = 'field_sequence4';
+  $handler->display->display_options['fields']['field_sequence4']['table'] = 'field_data_field_sequence4';
+  $handler->display->display_options['fields']['field_sequence4']['field'] = 'field_sequence4';
+  $handler->display->display_options['fields']['field_sequence4']['label'] = 'sequence';
+  $handler->display->display_options['fields']['field_sequence4']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sequence4']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_sequence4']['type'] = 'number_unformatted';
+  $handler->display->display_options['fields']['field_sequence4']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: tc_in5 */
+  $handler->display->display_options['fields']['field_tc_in4']['id'] = 'field_tc_in4';
+  $handler->display->display_options['fields']['field_tc_in4']['table'] = 'field_data_field_tc_in4';
+  $handler->display->display_options['fields']['field_tc_in4']['field'] = 'field_tc_in4';
+  $handler->display->display_options['fields']['field_tc_in4']['label'] = 'tc_in';
+  $handler->display->display_options['fields']['field_tc_in4']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: tc_out5 */
+  $handler->display->display_options['fields']['field_tc_out4']['id'] = 'field_tc_out4';
+  $handler->display->display_options['fields']['field_tc_out4']['table'] = 'field_data_field_tc_out4';
+  $handler->display->display_options['fields']['field_tc_out4']['field'] = 'field_tc_out4';
+  $handler->display->display_options['fields']['field_tc_out4']['label'] = 'tc_out';
+  $handler->display->display_options['fields']['field_tc_out4']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: sequence6 */
+  $handler->display->display_options['fields']['field_sequence5']['id'] = 'field_sequence5';
+  $handler->display->display_options['fields']['field_sequence5']['table'] = 'field_data_field_sequence5';
+  $handler->display->display_options['fields']['field_sequence5']['field'] = 'field_sequence5';
+  $handler->display->display_options['fields']['field_sequence5']['label'] = 'sequence';
+  $handler->display->display_options['fields']['field_sequence5']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sequence5']['type'] = 'number_unformatted';
+  $handler->display->display_options['fields']['field_sequence5']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: tc_in6 */
+  $handler->display->display_options['fields']['field_tc_in5']['id'] = 'field_tc_in5';
+  $handler->display->display_options['fields']['field_tc_in5']['table'] = 'field_data_field_tc_in5';
+  $handler->display->display_options['fields']['field_tc_in5']['field'] = 'field_tc_in5';
+  $handler->display->display_options['fields']['field_tc_in5']['label'] = 'tc_in';
+  $handler->display->display_options['fields']['field_tc_in5']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: tc_out6 */
+  $handler->display->display_options['fields']['field_tc_out5']['id'] = 'field_tc_out5';
+  $handler->display->display_options['fields']['field_tc_out5']['table'] = 'field_data_field_tc_out5';
+  $handler->display->display_options['fields']['field_tc_out5']['field'] = 'field_tc_out5';
+  $handler->display->display_options['fields']['field_tc_out5']['label'] = 'tc_out';
+  $handler->display->display_options['fields']['field_tc_out5']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
   /* Sort criterion: Content: Updated date */
   $handler->display->display_options['sorts']['changed']['id'] = 'changed';
   $handler->display->display_options['sorts']['changed']['table'] = 'node';
@@ -117,9 +270,9 @@ function dmc_xml_views_default_views() {
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['style_options']['transform'] = 1;
   $handler->display->display_options['style_options']['transform_type'] = 'underline';
-  $handler->display->display_options['path'] = 'export-xml';
+  $handler->display->display_options['path'] = 'export-xml2';
   $handler->display->display_options['use_batch'] = 'batch';
-  $export['export_xml'] = $view;
+  $export['export_xml_v2'] = $view;
 
   $view = new view();
   $view->name = 'view';
