@@ -60,11 +60,28 @@ function dmc_xml_views_default_views() {
   $handler->display->display_options['fields']['field_duration']['id'] = 'field_duration';
   $handler->display->display_options['fields']['field_duration']['table'] = 'field_data_field_duration';
   $handler->display->display_options['fields']['field_duration']['field'] = 'field_duration';
-  $handler->display->display_options['fields']['field_duration']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_duration']['alter']['text'] = '[field_duration-value]';
-  $handler->display->display_options['fields']['field_duration']['alter']['trim_whitespace'] = TRUE;
-  $handler->display->display_options['fields']['field_duration']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_duration']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_duration']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_duration']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: tc_in */
+  $handler->display->display_options['fields']['field_tc_in0_1']['id'] = 'field_tc_in0_1';
+  $handler->display->display_options['fields']['field_tc_in0_1']['table'] = 'field_data_field_tc_in0';
+  $handler->display->display_options['fields']['field_tc_in0_1']['field'] = 'field_tc_in0';
+  $handler->display->display_options['fields']['field_tc_in0_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_tc_in0_1']['settings'] = array(
+    'format' => 'h:mm:ss',
+    'leading_zero' => 1,
+  );
+  /* Field: Content: tc_out */
+  $handler->display->display_options['fields']['field_tc_out0_1']['id'] = 'field_tc_out0_1';
+  $handler->display->display_options['fields']['field_tc_out0_1']['table'] = 'field_data_field_tc_out0';
+  $handler->display->display_options['fields']['field_tc_out0_1']['field'] = 'field_tc_out0';
+  $handler->display->display_options['fields']['field_tc_out0_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_tc_out0_1']['settings'] = array(
     'format' => 'h:mm:ss',
     'leading_zero' => 1,
   );
@@ -408,10 +425,10 @@ function dmc_xml_views_default_views() {
   $handler->display->display_options['filters']['field_channel_tid']['value'] = array(
     5 => '5',
     2 => '2',
-    4 => '4',
-    1 => '1',
     3 => '3',
-    25 => '25',
+    1 => '1',
+    4 => '4',
+    22 => '22',
   );
   $handler->display->display_options['filters']['field_channel_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_channel_tid']['expose']['operator_id'] = 'field_channel_tid_op';
@@ -433,25 +450,22 @@ function dmc_xml_views_default_views() {
   $handler->display->display_options['filters']['field_locale_tid']['table'] = 'field_data_field_locale';
   $handler->display->display_options['filters']['field_locale_tid']['field'] = 'field_locale_tid';
   $handler->display->display_options['filters']['field_locale_tid']['value'] = array(
-    20 => '20',
-    13 => '13',
-    18 => '18',
-    24 => '24',
-    16 => '16',
-    14 => '14',
-    9 => '9',
-    19 => '19',
-    8 => '8',
-    21 => '21',
-    12 => '12',
-    22 => '22',
     6 => '6',
-    7 => '7',
     17 => '17',
-    11 => '11',
-    10 => '10',
+    20 => '20',
     15 => '15',
-    26 => '26',
+    9 => '9',
+    18 => '18',
+    10 => '10',
+    19 => '19',
+    11 => '11',
+    7 => '7',
+    8 => '8',
+    16 => '16',
+    12 => '12',
+    13 => '13',
+    14 => '14',
+    21 => '21',
   );
   $handler->display->display_options['filters']['field_locale_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_locale_tid']['expose']['operator_id'] = 'field_locale_tid_op';

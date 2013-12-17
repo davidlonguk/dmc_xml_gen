@@ -63,7 +63,7 @@ function theme_views_data_export_complete_page($variables) {
   $output .= '<p>';
   $output .= t('Your export has been created. View the XML <a href="@link">here</a>.', array('@link' => $file));
   $output .= '</p>';
-  $output .= '<form action="http://devbox.history.co.uk/xml-splitter/index.php" method="post" name="feedPasser"><input name="feedURL" type="hidden" value="' . $file .'" />';
+  $output .= '<form action="http://devbox.history.co.uk/xml-splitter/index.php" method="post" name="feedPasser"><input name="feedURL" type="hidden" value="http://devbox.history.co.uk/' . $file .'" />';
   $output .= '<button type="submit">Split the file</button></form>';
   $output .= '<p><img src="/img/gif/loading.gif" alt="go for it" /></p>';
 

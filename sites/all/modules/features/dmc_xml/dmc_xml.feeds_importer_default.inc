@@ -21,10 +21,10 @@ function dmc_xml_feeds_importer_default() {
       'plugin_key' => 'FeedsFileFetcher',
       'config' => array(
         'allowed_extensions' => 'txt csv tsv xml opml',
-        'direct' => FALSE,
-        'directory' => 'public://feeds',
+        'direct' => 0,
+        'directory' => 'public://temp',
         'allowed_schemes' => array(
-          0 => 'public',
+          'public' => 'public',
         ),
       ),
     ),
@@ -39,7 +39,7 @@ function dmc_xml_feeds_importer_default() {
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
         'expire' => '-1',
-        'author' => '3',
+        'author' => '2',
         'authorize' => 1,
         'mappings' => array(
           0 => array(

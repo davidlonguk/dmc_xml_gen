@@ -18,15 +18,20 @@
 <?php if($content != NULL){ ?>
 	<?php if($xml_tag[$field] == 'sequence'){
 		print '<segment>
-	';}
-	if($xml_tag[$field] == 'tc_in' || $xml_tag[$field] == 'tc_out'){ ?>
+	';
+         $segment = "open";
+        }
+	if($xml_tag[$field] == 'tc_in' || $xml_tag[$field] == 'tc_out' || $xml_tag[$field] == 'duration'){ ?>
 	<<?php print $xml_tag[$field]; ?>>0<?php print_r ($content); ?>:00</<?php print $xml_tag[$field]; ?>>
 	<?php ;} else { ?>
 	<<?php print $xml_tag[$field]; ?>><?php print_r ($content); ?></<?php print $xml_tag[$field]; ?>>
-	<?php ;} ?>
-	<?php if($xml_tag[$field] == 'tc_out'){
+	
+        <?php ;} ?>
+	<?php if($xml_tag[$field] == 'tc_out' && $segment = "open"){
 	print '</segment>
-	';}?>
+	';
+        $segment = "closed";
+        }?>
 <?php } ?>
 <?php endforeach; ?>
 </<?php print $item_item; ?>>
