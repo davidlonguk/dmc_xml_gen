@@ -58,11 +58,14 @@ function theme_views_data_export_feed_icon($variables) {
 function theme_views_data_export_complete_page($variables) {
   extract($variables, EXTR_SKIP);
   drupal_set_title(t('Data export successful'));
-  drupal_add_html_head(array('#tag' => 'meta', '#attributes' => array('http-equiv' =>"refresh", 'content' => '3;url='. $file)), 'views_data_export_download');
+  // drupal_add_html_head(array('#tag' => 'meta', '#attributes' => array('http-equiv' =>"refresh", 'content' => '3;url='. $file)), 'views_data_export_download');
   $output = '';
   $output .= '<p>';
-  $output .= t('Your export has been created. View/download the file <a href="@link">here</a> (will automatically download in 3 seconds.)', array('@link' => $file));
+  $output .= t('Your export has been created. View the XML <a href="@link">here</a>.', array('@link' => $file));
   $output .= '</p>';
+  $output .= '<form action="http://devbox.history.co.uk/xml-splitter/index.php" method="post" name="feedPasser"><input name="feedURL" type="hidden" value="' . $file .'" />';
+  $output .= '<button type="submit">Split the file</button></form>';
+  $output .= '<p><img src="/img/gif/loading.gif" alt="go for it" /></p>';
 
   if (!empty($return_url)) {
     $output .= '<p>';

@@ -411,6 +411,7 @@ function dmc_xml_views_default_views() {
     4 => '4',
     1 => '1',
     3 => '3',
+    25 => '25',
   );
   $handler->display->display_options['filters']['field_channel_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_channel_tid']['expose']['operator_id'] = 'field_channel_tid_op';
@@ -432,14 +433,25 @@ function dmc_xml_views_default_views() {
   $handler->display->display_options['filters']['field_locale_tid']['table'] = 'field_data_field_locale';
   $handler->display->display_options['filters']['field_locale_tid']['field'] = 'field_locale_tid';
   $handler->display->display_options['filters']['field_locale_tid']['value'] = array(
+    20 => '20',
     13 => '13',
+    18 => '18',
+    24 => '24',
+    16 => '16',
+    14 => '14',
     9 => '9',
+    19 => '19',
     8 => '8',
+    21 => '21',
     12 => '12',
+    22 => '22',
     6 => '6',
     7 => '7',
+    17 => '17',
     11 => '11',
     10 => '10',
+    15 => '15',
+    26 => '26',
   );
   $handler->display->display_options['filters']['field_locale_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_locale_tid']['expose']['operator_id'] = 'field_locale_tid_op';

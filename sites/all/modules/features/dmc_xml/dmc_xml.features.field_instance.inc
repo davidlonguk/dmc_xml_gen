@@ -47,7 +47,11 @@ function dmc_xml_field_default_field_instances() {
   // Exported field_instance: 'node-dmc_record-field_channel'
   $field_instances['node-dmc_record-field_channel'] = array(
     'bundle' => 'dmc_record',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'tid' => 25,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -114,7 +118,45 @@ function dmc_xml_field_default_field_instances() {
   // Exported field_instance: 'node-dmc_record-field_locale'
   $field_instances['node-dmc_record-field_locale'] = array(
     'bundle' => 'dmc_record',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'tid' => 26,
+        'vid' => 3,
+        'name' => 'unknown',
+        'description' => '',
+        'format' => 'filtered_html',
+        'weight' => 0,
+        'vocabulary_machine_name' => 'locales',
+        'rdf_mapping' => array(
+          'description' => array(
+            'predicates' => array(
+              0 => 'skos:definition',
+            ),
+          ),
+          'name' => array(
+            'predicates' => array(
+              0 => 'rdfs:label',
+              1 => 'skos:prefLabel',
+            ),
+          ),
+          'parent' => array(
+            'predicates' => array(
+              0 => 'skos:broader',
+            ),
+            'type' => 'rel',
+          ),
+          'rdftype' => array(
+            0 => 'skos:Concept',
+          ),
+          'vid' => array(
+            'predicates' => array(
+              0 => 'skos:inScheme',
+            ),
+            'type' => 'rel',
+          ),
+        ),
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -525,7 +567,7 @@ function dmc_xml_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'default_description' => 1,
-      'format' => 's',
+      'format' => 'h:mm:ss',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -705,7 +747,7 @@ function dmc_xml_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'default_description' => 1,
-      'format' => 's',
+      'format' => 'h:mm:ss',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
